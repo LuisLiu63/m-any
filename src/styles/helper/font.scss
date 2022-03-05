@@ -1,0 +1,122 @@
+// font
+.font-main {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  color: white;
+}
+
+.thin {
+  font-weight: 100;
+}
+.bitthin {
+  font-weight: 200;
+}
+.light {
+  font-weight: 300;
+}
+.bitlight {
+  font-weight: 400;
+}
+.normal {
+  font-weight: 500;
+}
+.bitbold {
+  font-weight: 600;
+}
+.bold {
+  font-weight: 700;
+}
+.bitstrong {
+  font-weight: 800;
+}
+.strong {
+  font-weight: 900;
+}
+
+.font-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.normal-case {
+  text-transform: none;
+}
+
+.decoration-underline {
+  text-decoration-line: underline;
+}
+.decoration-overline {
+  text-decoration-line: overline;
+}
+.decoration-line-through {
+  text-decoration-line: line-through;
+}
+.decoration-no-underline {
+  text-decoration-line: none;
+}
+
+
+[class^=decoration-].inherit {
+  text-decoration-color: inherit;
+}
+[class^=decoration-].current {
+  text-decoration-color: currentColor;
+}
+[class^=decoration-].transparent {
+  text-decoration-color: transparent;
+}
+[class^=decoration-].black {
+  text-decoration-color: #000;
+}
+[class^=decoration-].white {
+  text-decoration-color: #fff;
+}
+
+[class^=decoration-].solid {
+  text-decoration-style: solid;
+}
+[class^=decoration-].double {
+  text-decoration-style: double;
+}
+[class^=decoration-].dotted {
+  text-decoration-style: dotted;
+}
+[class^=decoration-].dashed {
+  text-decoration-style: dashed;
+}
+[class^=decoration-].wavy {
+  text-decoration-style: wavy;
+}
+
+[class^=decoration-].autothin {
+  text-decoration-thickness: auto;
+}
+[class^=decoration-].fontthin {
+  text-decoration-thickness: from-font;
+}

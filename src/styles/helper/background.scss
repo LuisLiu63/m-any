@@ -1,0 +1,125 @@
+// background
+.bg-fixed {
+  background-attachment: fixed;
+}
+.bg-local {
+  background-attachment: local;
+}
+.bg-scroll {
+  background-attachment: scroll;
+}
+
+[class^=bg].clip-border {
+  background-clip: border-box;
+}
+[class^=bg].clip-padding {
+  background-clip: padding-box;
+}
+[class^=bg].clip-content {
+  background-clip: content-box;
+}
+[class^=bg].clip-text {
+  background-clip: text;
+}
+
+[class^=bg].bottom {
+  background-position: bottom;
+}
+[class^=bg].center {
+  background-position: center;
+}
+[class^=bg].left {
+  background-position: left;
+}
+[class^=bg].left-bottom {
+  background-position: left bottom;
+}
+[class^=bg].left-top {
+  background-position: left top;
+}
+[class^=bg].right {
+  background-position: right;
+}
+[class^=bg].right-bottom {
+  background-position: right bottom;
+}
+[class^=bg].right-top {
+  background-position: right top;
+}
+[class^=bg].top {
+  background-position: top;
+}
+
+[class^=bg].repeat {
+  background-repeat: repeat;
+}
+[class^=bg].no-repeat {
+  background-repeat: no-repeat;
+}
+[class^=bg].repeat-x {
+  background-repeat: repeat-x;
+}
+[class^=bg].repeat-y {
+  background-repeat: repeat-y;
+}
+[class^=bg].repeat-round {
+  background-repeat: round;
+}
+[class^=bg].repeat-space {
+  background-repeat: space;
+}
+
+.bg-auto	{
+  background-size: auto;
+}
+.bg-cover	{
+  background-size: cover;
+}
+.bg-contain	{
+  background-size: contain;
+}
+
+// object
+.object-contain {
+  object-fit: contain;
+}
+.object-cover {
+  object-fit: cover;
+}
+.object-fill {
+  object-fit: fill;
+}
+.object-none {
+  object-fit: none;
+}
+.object-scale-down {
+  object-fit: scale-down;
+}
+
+.object-bottom {
+  object-position: bottom;
+}
+.object-center {
+  object-position: center;
+}
+.object-left {
+  object-position: left;
+}
+.object-left-bottom {
+  object-position: left bottom;
+}
+.object-left-top {
+  object-position: left top;
+}
+.object-right {
+  object-position: right;
+}
+.object-right-bottom {
+  object-position: right bottom;
+}
+.object-right-top {
+  object-position: right top;
+}
+.object-top {
+  object-position: top;
+}

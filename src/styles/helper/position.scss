@@ -1,0 +1,76 @@
+/**
+* @desc 位置设置
+**/
+
+// position
+.static {
+  position: static;
+}
+.fixed {
+  position: fixed;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.sticky {
+  position: sticky;
+}
+
+// position spacing
+.top-left {
+  top: 0;
+  left: 0;
+}
+.top-right {
+  top: 0;
+  right: 0;
+}
+.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+.bottom-right {
+  bottom: 0;
+  right: 0;
+}
+.x-center {
+  left: 50%;
+}
+.y-center {
+  top: 50%;
+}
+.xy-center {
+  left: 50%;
+  top: 50%;
+}
+.xy-center-translate {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% -50%);
+}
+
+// float
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
+.float-none {
+  float: none;
+}
+.clear-left {
+  clear: left;
+}
+.clear-right {
+  clear: right;
+}
+.clear-both {
+  clear: both;
+}
+.clear-none {
+  clear: none;
+}

@@ -1,0 +1,22 @@
+// Visibility
+.visible {
+  visibility: visible;
+}
+.invisible {
+  visibility: hidden;
+}
+
+// hide
+.hide {
+  display: none;
+}
+
+// z-index
+@for $i from 0 to 10 {
+  .z-#{$i} {
+    z-index: $i * 10;
+  }
+}
+.z-auto {
+  z-index: auto;
+}
