@@ -1,12 +1,25 @@
-import { FullOptions } from '../types/index';
+import { FullOptions, OptionsParam } from '../types/index';
 
-export const UI_PREFIX = 'Big-';
+export const UI_PREFIX = 'Any-';
 
-export const defaultOptions: FullOptions = {
+export const DefaultOptions: FullOptions = {
   theme: 'base',
-  size: 'normal'
+  size: 'normal',
+  ui: {
+    buttonType: 'main',
+    buttonSize: 'normal',
+  }
 }
 
-export function SetOptions(options: FullOptions): void {
-  Object.assign(defaultOptions, options);
+export let ResultOptions: FullOptions = {
+  theme: 'base',
+  size: 'normal',
+  ui: {
+    buttonType: 'main',
+    buttonSize: 'normal',
+  }
+}
+
+export function SetOptions(options: OptionsParam): void {
+  ResultOptions = Object.assign({}, DefaultOptions, options);
 }

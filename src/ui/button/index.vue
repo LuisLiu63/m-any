@@ -1,29 +1,57 @@
 <template>
-  <button type="button" class="text-right" :class="classes" @click="onClick" :style="style">{{ label }}</button>
+  <button class="rounded border-4" :type="button">
+    <slot></slot>
+  </button>
 </template>
 
-<script>
+<script lang="ts">
 import './button.scss';
-import { reactive, computed } from 'vue';
+import { reactive, PropType } from 'vue';
+import { nativeButtonTypes, nativeType, functionType, functionButtonTypes, buttonSizes, buttonSize } from '../../types';
+
+
+const nativeButtons: nativeType[] = [
+  nativeButtonTypes.Button
+];
+
+const styleButtons: functionType[] = [
+  functionButtonTypes.Text,
+  functionButtonTypes.Main
+]
+
+const sizeButtons: buttonSize[] = [
+  buttonSizes.Mini,
+  buttonSizes.Small,
+  buttonSizes.Normal,
+  buttonSizes.Large,
+  buttonSizes.Full,
+]
 
 export default {
   name: 'Button',
 
   props: {
-    label: {
-      type: String,
-      required: true,
+    /**
+     * @description the native button type in html | 按钮在html中的原生类型
+     * @default 'button'
+     */
+    nativeType: {
+      type: String as PropType<nativeType>,
+      default: 'button',
+      validator: (value: nativeType) => nativeButtons.includes(value)
     },
-    primary: {
-      type: Boolean,
-      default: false,
+    /**
+     * @description the function of button | 按钮的功能
+     * @default 'main'
+     */
+    type: {
+      type: String as PropType<functionType>,
+      default: 'main',
+      validator: (value: functionType) => styleButtons.includes(value)
     },
     size: {
-      type: String,
-      validator: (value) => ['small', 'normal', 'large', 'full'].indexOf(value) !== -1,
-    },
-    backgroundColor: {
-      type: String,
+      type: String as PropType<buttonSize>,
+      validator: (value: buttonSize) => sizeButtons.includes(value)
     },
   },
 
@@ -31,20 +59,6 @@ export default {
 
   setup(props, { emit }) {
     props = reactive(props);
-    return {
-      classes: computed(() => ({
-        '': true,
-        '--primary': props.primary,
-        '--secondary': !props.primary,
-        [`--${props.size || 'medium'}`]: true,
-      })),
-      style: computed(() => ({
-        backgroundColor: props.backgroundColor,
-      })),
-      onClick() {
-        emit('click');
-      }
-    }
   },
 };
 </script>

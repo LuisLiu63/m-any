@@ -14,8 +14,8 @@ export default {
   },
   colors: {
     transparent: 'transparent',
-    white: '#ffffff',
-    blank: '#000000',
+    light: '#ffffff',
+    deep: '#000000',
     text: {
       default: '#9cc5ff',
       hover: '#ffffff',
@@ -30,6 +30,12 @@ export default {
     }
   },
   sizes: {
-    base: '10px',
+    base: '1rem',
+    mini: '0.1rem',
+    small: '0.3rem',
+    medium: '0.5rem',
+    large: '0.8rem',
+    huge: '1rem',
+    super: '1rem',
   }
 }

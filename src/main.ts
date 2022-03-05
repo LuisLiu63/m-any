@@ -1,15 +1,17 @@
 /**
  * @author liuchuan
  */
+
 import { App } from 'vue';
 
-import { FullOptions } from './types/index';
-import { UI_PREFIX, defaultOptions, SetOptions } from './options';
+import UI from './ui';
+import { SetTheme } from './theme';
 
-import './styles/index.scss';
+import { OptionsParam } from './types';
 
 export default {
-  install(Vue: App, options: FullOptions): void {
-    console.log({ Vue, options });
-  }
+  SetTheme,
+  UseUI(Vue: App, options: OptionsParam) {
+    Vue.use(UI, options);
+  },
 }
