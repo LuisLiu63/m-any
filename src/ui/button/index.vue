@@ -1,5 +1,5 @@
 <template>
-  <button class="rounded border-4" :type="button">
+  <button class="any-button rounded border-4" :type="button">
     <slot></slot>
   </button>
 </template>
@@ -8,7 +8,6 @@
 import './button.scss';
 import { reactive, PropType } from 'vue';
 import { nativeButtonTypes, nativeType, functionType, functionButtonTypes, buttonSizes, buttonSize } from '../../types';
-
 
 const nativeButtons: nativeType[] = [
   nativeButtonTypes.Button
@@ -38,7 +37,7 @@ export default {
     nativeType: {
       type: String as PropType<nativeType>,
       default: 'button',
-      validator: (value: nativeType) => nativeButtons.includes(value)
+      validator: (value: nativeType): boolean => nativeButtons.includes(value)
     },
     /**
      * @description the function of button | 按钮的功能
@@ -47,11 +46,11 @@ export default {
     type: {
       type: String as PropType<functionType>,
       default: 'main',
-      validator: (value: functionType) => styleButtons.includes(value)
+      validator: (value: functionType): boolean => styleButtons.includes(value)
     },
     size: {
       type: String as PropType<buttonSize>,
-      validator: (value: buttonSize) => sizeButtons.includes(value)
+      validator: (value: buttonSize): boolean => sizeButtons.includes(value)
     },
   },
 

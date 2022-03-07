@@ -37,5 +37,13 @@ export default {
     large: '0.8rem',
     huge: '1rem',
     super: '1rem',
+    padding: {
+      mini: '0.1rem 0.2rem',
+      small: '0.2rem 0.4rem',
+      medium: '0.3rem 0.6rem',
+      large: '0.4rem 0.8rem',
+      huge: '0.6rem 1rem',
+      super: '0.8rem 1.2rem',
+    }
   }
 }

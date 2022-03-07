@@ -8,8 +8,7 @@
 import { DefaultOptions } from '../options';
 import { CssVarPrefix } from '../constants';
 
-
-import Theme_Base from './theme-base';
+import themeBase from './theme-base';
 
 type ThemeBlock = {
   [key: string]: string;
@@ -26,21 +25,20 @@ type AllTheme = {
 }
 
 export const Themes: AllTheme = {
-  base: Theme_Base
+  base: themeBase
 }
 
-export const SetTheme = (themeName = DefaultOptions.theme) => {
+export const SetTheme = (themeName = DefaultOptions.theme):void => {
   const themedCssVarsMap: Theme = Themes[themeName];
   const rootElement = document.body.style;
 
   (function loop (obj: any, name:string) {
-
-    for(const key in obj) {
+    for (const key in obj) {
       const _path = `${name}-${key}`;
 
       typeof obj[key] === 'string'
-      ? rootElement.setProperty(_path, obj[key])
-      : loop(obj[key], _path)
+        ? rootElement.setProperty(_path, obj[key])
+        : loop(obj[key], _path)
     }
   })(themedCssVarsMap, CssVarPrefix)
 }
