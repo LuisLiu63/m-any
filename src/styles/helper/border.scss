@@ -152,3 +152,9 @@
 .border-white	{
   border-color: rgb(255 255 255);
 }
+.border-light {
+  border-color: var(--any-colors-light);
+}
+.border-deep {
+  border-color: var(--any-colors-deep);
+}

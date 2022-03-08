@@ -1,5 +1,8 @@
-// space
-
 // width
+@for $i from 1 through 10 {
+  .w-#{$i} {
+    width: 0.1rem * $i;
+  }
+}
 
 // height
