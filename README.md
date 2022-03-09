@@ -1,5 +1,7 @@
 # m-any
 
+> m-any means "many" and "make any"
+
 ## Project setup
 ```
 yarn install
