@@ -7,3 +7,42 @@
 .cur-hand {
   cursor: hand;
 }
+.cur-crosshair {
+  cursor: crosshair;
+}
+
+// cursor resize
+.cur-resize-b {
+  cursor: s-resize;
+}
+.cur-resize-t {
+  cursor: n-resize;
+}
+.cur-resize-l {
+  cursor: w-resize;
+}
+.cur-resize-r {
+  cursor: e-resize;
+}
+.cur-resize-tr {
+  cursor: ne-resize;
+}
+.cur-resize-tl {
+  cursor: nw-resize;
+}
+.cur-resize-br {
+  cursor: se-resize;
+}
+.cur-resize-bl {
+  cursor: sw-resize;
+}
+
+.cur-text {
+  cursor: text;
+}
+.cur-wait {
+  cursor: wait;
+}
+.cur-help {
+  cursor: help;
+}
