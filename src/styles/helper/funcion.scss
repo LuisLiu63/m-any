@@ -1,0 +1,19 @@
+/**
+ * functional classes
+*/
+
+// hidden from document floww
+.hidden,
+.hidden-none {
+  display: none;
+}
+
+// hidden but hold place
+.hidden-holder {
+  visibility: hidden;
+}
+
+// hidden but hold place and get events
+.hidden-visble {
+  opacity: 0;
+}
