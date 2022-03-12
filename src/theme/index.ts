@@ -32,7 +32,7 @@ export const SetTheme = (themeName = DefaultOptions.theme):void => {
   const themedCssVarsMap: Theme = Themes[themeName];
   const rootElement = document.body.style;
 
-  (function loop (obj: any, name:string) {
+  (function loop (obj: ThemeBlock, name:string) {
     for (const key in obj) {
       const _path = `${name}-${key}`;
 
