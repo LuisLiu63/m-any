@@ -16,6 +16,8 @@ export default {
     transparent: 'transparent',
     light: '#ffffff',
     deep: '#000000',
+    main: '',
+    secondary: '#000000',
     text: {
       default: '#9cc5ff',
       hover: '#ffffff',
