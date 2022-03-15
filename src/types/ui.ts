@@ -1,13 +1,13 @@
 // ui/button
 export enum nativeButtonTypes {
   Button = 'button'
-};
+}
 export type nativeType = 'button';
 
 export enum functionButtonTypes {
   Text = 'text',
-  Main =  'main',
-  Secondary = 'secondary'
+  Main = 'main',
+  Second = 'second'
 }
 export type functionType = 'text' | 'main';
 

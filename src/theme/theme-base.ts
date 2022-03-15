@@ -1,5 +1,13 @@
 export default {
   backgrounds: {
+    light: '#ffffff',
+    deep: '#000000',
+    base: '',
+    main: '',
+    second: '',
+    normal: '',
+    sub: '',
+    last: '',
     colors: {
       normal: ''
     },
@@ -16,8 +24,12 @@ export default {
     transparent: 'transparent',
     light: '#ffffff',
     deep: '#000000',
+    base: '',
     main: '',
-    secondary: '#000000',
+    second: '',
+    normal: '',
+    sub: '',
+    last: '',
     text: {
       default: '#9cc5ff',
       hover: '#ffffff',
@@ -33,6 +45,7 @@ export default {
   },
   sizes: {
     base: '1rem',
+    bit: '0.05rem',
     mini: '0.1rem',
     small: '0.3rem',
     medium: '0.5rem',
