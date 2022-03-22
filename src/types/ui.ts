@@ -48,9 +48,6 @@ export type statusParams = {
   default?: string,
   light?: string,
   deep?: string,
-  hover?: string,
-  focus?: string,
-  active?: string,
   normal?: string,
   most?: string,
   more?: string,
@@ -65,9 +62,6 @@ export type statusValues = {
   default: string,
   light: string,
   deep: string,
-  hover: string,
-  focus: string,
-  active: string,
   normal: string,
   most: string,
   more: string,
@@ -79,7 +73,6 @@ export type statusValues = {
 
 // 操作级别 - 参数
 export type actionParams = {
-  default?: string,
   force?: string,
   strong?: string,
   care?: string,
@@ -90,7 +83,6 @@ export type actionParams = {
 
 // 操作级别 - 值
 export type actionValues = {
-  default: string,
   force: string,
   strong: string,
   care: string,
