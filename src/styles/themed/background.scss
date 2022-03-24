@@ -1,0 +1,38 @@
+// backgrounds
+
+$levels: default light deep normal most more more main second sub last;
+
+// public color background
+@each $level in  $levels {
+  .backcolor-#{$level} {
+    background-color: var(--zx-backgrounds-#{$level}, inherit);
+  }
+}
+
+// public gradient background
+@each $level in  $levels {
+  .backmix-#{$level} {
+    background-image: var(--zx-backgrounds-gradients-#{$level}, inherit);
+  }
+}
+
+// public image background
+@each $level in  $levels {
+  .backimg-#{$level} {
+    background-image: var(--zx-backgrounds-images-#{$level}, inherit);
+  }
+}
+
+// public hover background
+@each $level in  $levels {
+  .backhover-#{$level} {
+    background-image: var(--zx-backgrounds-images-#{$level}, inherit);
+  }
+}
+
+// public hover background
+@each $level in  $levels {
+  .backfocus-#{$level} {
+    background-image: var(--zx-backgrounds-images-#{$level}, inherit);
+  }
+}
