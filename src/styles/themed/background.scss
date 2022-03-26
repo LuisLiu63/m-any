@@ -1,38 +1,36 @@
 // backgrounds
+@import '../types.scss';
 
-$levels: default light deep normal most more more main second sub last;
-
-// public color background
-@each $level in  $levels {
-  .backcolor-#{$level} {
-    background-color: var(--zx-backgrounds-#{$level}, inherit);
+@each $state in  $status {
+  // public color background
+  .back-#{$state} {
+    background-color: var(#{$prefix}-backgrounds-#{$state}, inherit);
+  }
+  // public gradient background
+  .back-mix-#{$state} {
+    background-image: var(#{$prefix}-backgrounds-gradients-#{$state}, inherit);
+  }
+  // public image background
+  .back-img-#{$state} {
+    background-image: var(#{$prefix}-backgrounds-images-#{$state}, inherit);
+  }
+  // public hover background
+  .back-hover-#{$state} {
+    &:hover {
+      background-color: var(#{$prefix}-backgrounds-images-#{$state}, inherit);
+    }
+  }
+  // public focus background
+  .back-focus-#{$state} {
+    &:focus {
+      background-color: var(#{$prefix}-backgrounds-images-#{$state}, inherit);
+    }
+  }
+  // public active background
+  .back-active-#{$state} {
+    &:active {
+      background-color: var(#{$prefix}-backgrounds-images-#{$state}, inherit);
+    }
   }
 }
 
-// public gradient background
-@each $level in  $levels {
-  .backmix-#{$level} {
-    background-image: var(--zx-backgrounds-gradients-#{$level}, inherit);
-  }
-}
-
-// public image background
-@each $level in  $levels {
-  .backimg-#{$level} {
-    background-image: var(--zx-backgrounds-images-#{$level}, inherit);
-  }
-}
-
-// public hover background
-@each $level in  $levels {
-  .backhover-#{$level} {
-    background-image: var(--zx-backgrounds-images-#{$level}, inherit);
-  }
-}
-
-// public hover background
-@each $level in  $levels {
-  .backfocus-#{$level} {
-    background-image: var(--zx-backgrounds-images-#{$level}, inherit);
-  }
-}

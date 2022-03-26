@@ -1,5 +1,5 @@
 <template>
-  <button class="any-button rounded border-4" :type="button">
+  <button class="any-u--main" :type="button">
     <slot></slot>
   </button>
 </template>

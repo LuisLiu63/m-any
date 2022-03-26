@@ -13,29 +13,26 @@ import {
 
 export function Levels(levels?: levelParams):levelValues {
   return Object.assign({
-    top: '', //    最高
-    high: '', //   高级
-    higher: '', // 较高
-    middle: '', // 中等
-    lower: '', //  较低
-    low: '', //    低级
-    bottom: '', // 最低
+    top: '999', //    最高
+    high: '800', //   高级
+    higher: '700', // 较高
+    middle: '500', // 中等
+    lower: '400', //  较低
+    low: '200', //    低级
+    bottom: '1', // 最低
   }, levels)
 }
 
 export function Status(colors?: statusParams):statusValues {
   return Object.assign({
-    default: '#cccccc',
+    default: '#0f172a',
     light: 'rgb(255, 255, 255)',
-    deep: 'rgb(0, 0, 0)',
-    hover: '',
-    focus: '',
-    active: '',
+    deep: 'rgb(51, 51, 51)',
     normal: '', // 常规
-    most: '', //   最重要
-    more: '', //   重要
-    main: '', //   主要
-    second: '', // 次要
+    most: 'rgba(255, 0, 0, 1)', //   最重要
+    more: 'rgba(255, 0, 0, 0.6)', //   重要
+    main: 'rgba(0, 0, 0, 1)', //   主要
+    second: 'rgba(50, 50, 50, 1)', // 次要
     sub: '', //    附属
     last: '', //   最后
   }, colors)
@@ -43,7 +40,6 @@ export function Status(colors?: statusParams):statusValues {
 
 export function Actions(actions?: actionParams): actionValues {
   return Object.assign({
-    default: '', // 默认
     force: 'rgb(255, 0, 0)', // 强制
     strong: '', // 强烈
     care: '', // 慎重

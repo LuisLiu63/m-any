@@ -1,0 +1,25 @@
+// colors
+@import '../types.scss';
+
+// public color
+@each $state in  $status {
+  .color-#{$state} {
+    color: var(#{$prefix}-colors-#{$state}, inherit);
+  }
+  .color-hover-#{$state} {
+    &:hover {
+      color: var(#{$prefix}-colors-hover-#{$state}, inherit);
+    }
+  }
+  .color-focus-#{$state} {
+    &:focus {
+      color: var(#{$prefix}-colors-focus-#{$state}, inherit);
+    }
+  }
+  .color-active-#{$state} {
+    &:active {
+      color: var(#{$prefix}-colors-active-#{$state}, inherit);
+    }
+  }
+}
+

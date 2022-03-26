@@ -1,0 +1,27 @@
+// 组合类 - 固定的组合类
+@import '../types.scss';
+
+@each $state in $status {
+  .any-u--#{$state} {
+    background-color: var(#{$prefix}-backgrounds-#{$state}, inherit);
+    color: var(#{$prefix}-colors-#{$state}, inherit);
+
+    &:hover {
+      background-color: var(#{$prefix}-backgrounds-hover-#{$state}, inherit);
+      color: var(#{$prefix}-colors-hover-#{$state}, inherit);
+    }
+  }
+}
+
+// 操作类型集合样式
+@each $action in $actions {
+  .any-action--#{$action} {
+    background-color: var(#{$prefix}-actions-backgrounds-#{$action}, inherit);
+    color: var(#{$prefix}-actions-#{$action}, inherit);
+
+    &:hover {
+      background-color: var(#{$prefix}-actions-backgrounds-#{$action}, inherit);
+      color: var(#{$prefix}-actions-hover-#{$action}, inherit);
+    }
+  }
+}

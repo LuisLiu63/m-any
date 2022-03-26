@@ -1,0 +1,27 @@
+// action 动作样式
+@import '../types.scss';
+
+// public  action
+@each $action in  $actions {
+  .action-#{$action} {
+    color: var(#{$prefix}-actions-#{$action}, inherit);
+  }
+  .action-hover-#{$action} {
+    &:hover {
+      color: var(#{$prefix}-actions-hover-#{$action}, inherit);
+    }
+  }
+  .action-focus-#{$action} {
+    &:focus {
+      color: var(#{$prefix}-actions-focus-#{$action}, inherit);
+    }
+  }
+  .action-active-#{$action} {
+    &:active {
+      color: var(#{$prefix}-actions-active-#{$action}, inherit);
+    }
+  }
+  .action-back-#{$action} {
+    background-color: var(#{$prefix}-actions-backgrounds-#{$action}, inherit);
+  }
+}
