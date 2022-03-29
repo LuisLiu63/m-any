@@ -1,7 +1,16 @@
+/**
+ * Author: luisliu
+ * Description: the action class generator
+ * Time: 2022-03-29 19:57:46
+ * Contact: lc63msn@Hotmail.com
+ */
+
+
 // action 动作样式
 @import '../types.scss';
 
 // public  action
+// @TODO set action to act
 @each $action in  $actions {
   .action-#{$action} {
     color: var(#{$prefix}-actions-#{$action}, inherit);

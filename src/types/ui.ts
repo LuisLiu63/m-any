@@ -45,10 +45,8 @@ export type levelValues = {
 
 // 状态 - 参数
 export type statusParams = {
-  default?: string,
   light?: string,
   deep?: string,
-  normal?: string,
   most?: string,
   more?: string,
   main?: string,
@@ -59,10 +57,8 @@ export type statusParams = {
 
 // 状态 - 值
 export type statusValues = {
-  default: string,
   light: string,
   deep: string,
-  normal: string,
   most: string,
   more: string,
   main: string,
@@ -93,7 +89,6 @@ export type actionValues = {
 
 // 尺寸级别 - 参数
 export type sizeParams = {
-  base?: string,
   bit?: string,
   mini?: string,
   small?: string,
@@ -105,7 +100,6 @@ export type sizeParams = {
 
 // 尺寸级别 - 值
 export type sizeValues = {
-  base: string,
   bit: string,
   mini: string,
   small: string,

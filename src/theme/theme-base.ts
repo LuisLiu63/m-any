@@ -7,7 +7,6 @@
 import { Levels, Status, Actions, Sizes } from '../factors';
 
 const PubSizing = Sizes({
-  base: '0.1rem',
   bit: '0.1rem',
   mini: '0.2rem',
   small: '0.3rem',
@@ -20,22 +19,18 @@ const PubSizing = Sizes({
 export default {
   backgrounds: {
     ...Status({
-      default: 'string',
       light: 'string',
       deep: 'string',
-      normal: 'string',
       most: 'string',
       more: 'string',
-      main: 'rgba(0, 0, 0, 1)',
+      main: 'rgba(1, 0, 0, 1)',
       second: 'string',
       sub: 'string',
       last: 'string',
     }),
     gradients: Status({
-      default: '',
       light: 'linear-gradient(0deg, rgba(32, 111, 223, 0.5) 0%, #206fdf 53%, rgba(32, 111, 223, 0.5) 100%)',
       deep: 'linear-gradient(0deg, rgba(32, 111, 223, 0.5) 0%, #206fdf 53%, rgba(32, 111, 223, 0.5) 100%)',
-      normal: 'string',
       most: 'string',
       more: 'string',
       main: 'string',
@@ -44,10 +39,8 @@ export default {
       last: 'string',
     }),
     images: Status({
-      default: 'string',
       light: 'string',
       deep: 'string',
-      normal: 'string',
       most: 'string',
       more: 'string',
       main: 'string',
@@ -56,10 +49,8 @@ export default {
       last: 'string',
     }),
     hover: Status({
-      default: 'string',
       light: 'string',
       deep: 'string',
-      normal: 'string',
       most: 'string',
       more: 'string',
       main: 'rgba(255, 255, 255, 1)',
@@ -68,7 +59,6 @@ export default {
       last: 'string'
     }),
     focus: Status({
-      default: 'string',
       light: 'string',
       deep: 'string',
       normal: 'string',
@@ -80,10 +70,8 @@ export default {
       last: 'string',
     }),
     active: Status({
-      default: 'string',
       light: 'string',
       deep: 'string',
-      normal: 'string',
       most: 'string',
       more: 'string',
       main: 'rgba(255, 255, 255, 1)',
@@ -94,10 +82,8 @@ export default {
   },
   colors: {
     ...Status({
-      default: 'string',
       light: 'string',
       deep: 'string',
-      normal: 'string',
       most: 'string',
       more: 'string',
       main: 'rgba(255, 255, 255, 1)',
@@ -106,10 +92,8 @@ export default {
       last: 'string',
     }),
     hover: Status({
-      default: 'string',
       light: 'string',
       deep: 'string',
-      normal: 'string',
       most: 'string',
       more: 'string',
       main: 'rgba(0, 0, 0, 1)',
@@ -118,10 +102,8 @@ export default {
       last: 'string',
     }),
     focus: Status({
-      default: 'string',
       light: 'string',
       deep: 'string',
-      normal: 'string',
       most: 'string',
       more: 'string',
       main: 'string',
@@ -130,10 +112,8 @@ export default {
       last: 'string',
     }),
     active: Status({
-      default: 'string',
       light: 'string',
       deep: 'string',
-      normal: 'string',
       most: 'string',
       more: 'string',
       main: 'rgba(0, 0, 0, 1)',
@@ -184,24 +164,22 @@ export default {
       ban: '',
     }),
   },
-  border: Status({
-    default: 'string',
-    light: 'string',
-    deep: 'string',
-    normal: 'string',
-    most: 'string',
-    more: 'string',
-    main: 'string',
-    second: 'string',
-    sub: 'string',
-    last: 'string',
-  }),
-  shadow: {
+  border: {
     ...Status({
-      default: 'string',
       light: 'string',
       deep: 'string',
-      normal: 'string',
+      most: 'string',
+      more: 'string',
+      main: 'string',
+      second: 'string',
+      sub: 'string',
+      last: 'string',
+    })
+  },
+  shadow: {
+    ...Status({
+      light: 'string',
+      deep: 'string',
       most: 'string',
       more: 'string',
       main: 'string',
@@ -212,7 +190,6 @@ export default {
   },
   sizes: {
     ...Sizes({
-      base: '0.1rem',
       bit: '0.1rem',
       mini: '0.2rem',
       small: '0.5rem',
@@ -221,18 +198,7 @@ export default {
       huge: '2rem',
       super: '2.5rem',
     }),
-    border: Sizes({
-      base: '0.1rem',
-      bit: '0.1rem',
-      mini: '0.2rem',
-      small: '0.3rem',
-      medium: '0.5rem',
-      large: '0.6rem',
-      huge: '1rem',
-      super: '1.5rem',
-    }),
     radius: Sizes({
-      base: '0.1rem',
       bit: '0.5rem',
       mini: '0.8rem',
       small: '1rem',
@@ -242,7 +208,6 @@ export default {
       super: '100%',
     }),
     padding: Sizes({
-      base: '0.2rem 0.3rem',
       bit: '0.1rem 0.1rem',
       mini: '0.1rem 0.2rem',
       small: '0.2rem 0.3rem',
@@ -258,7 +223,6 @@ export default {
     padX: PubSizing,
     padY: PubSizing,
     margin: Sizes({
-      base: '0.5rem 0.5rem',
       bit: '0.1rem 0.1rem',
       mini: '0.1rem 0.2rem',
       small: '0.2rem 0.3rem',
