@@ -24,8 +24,8 @@ export default {
       most: 'string',
       more: 'string',
       main: 'rgba(1, 0, 0, 1)',
-      second: 'string',
-      sub: 'string',
+      second: 'rgba(1, 0, 0, 0.8)',
+      sub: 'rgba(1, 0, 0, 0.5)',
       last: 'string',
     }),
     gradients: Status({
@@ -61,7 +61,6 @@ export default {
     focus: Status({
       light: 'string',
       deep: 'string',
-      normal: 'string',
       most: 'string',
       more: 'string',
       main: 'rgba(255, 255, 255, 1)',
@@ -87,8 +86,8 @@ export default {
       most: 'string',
       more: 'string',
       main: 'rgba(255, 255, 255, 1)',
-      second: 'string',
-      sub: 'string',
+      second: 'rgba(255, 255, 255, 0.8)',
+      sub: 'rgba(255, 255, 255, 0.5)',
       last: 'string',
     }),
     hover: Status({
@@ -97,8 +96,8 @@ export default {
       most: 'string',
       more: 'string',
       main: 'rgba(0, 0, 0, 1)',
-      second: 'string',
-      sub: 'string',
+      second: 'rgba(0, 0, 0, 0.8)',
+      sub: 'rgba(0, 0, 0, 0.6)',
       last: 'string',
     }),
     focus: Status({
@@ -121,48 +120,6 @@ export default {
       sub: 'string',
       last: 'string',
     })
-  },
-  actions: {
-    ...Actions({
-      force: '#db2f2f',
-      strong: '#db2f2f',
-      care: '#f3d23a',
-      relax: '#ffffff',
-      prefer: '',
-      ban: '',
-    }),
-    backgrounds: Actions({
-      force: '#db2f2f',
-      strong: '#db2f2f',
-      care: '#f3d23a',
-      relax: '#ffffff',
-      prefer: '',
-      ban: '',
-    }),
-    hover: Actions({
-      force: '#db2f2f',
-      strong: '#db2f2f',
-      care: '#f3d23a',
-      relax: '#ffffff',
-      prefer: '',
-      ban: '',
-    }),
-    focus: Actions({
-      force: '#db2f2f',
-      strong: '#db2f2f',
-      care: '#f3d23a',
-      relax: '#ffffff',
-      prefer: '',
-      ban: '',
-    }),
-    active: Actions({
-      force: '#db2f2f',
-      strong: '#db2f2f',
-      care: '#f3d23a',
-      relax: '#ffffff',
-      prefer: '',
-      ban: '',
-    }),
   },
   border: {
     ...Status({
@@ -197,6 +154,15 @@ export default {
       large: '1.5rem',
       huge: '2rem',
       super: '2.5rem',
+    }),
+    text: ({
+      bit: '1.2rem',
+      mini: '1.4rem',
+      small: '1.6rem',
+      medium: '1.8rem',
+      large: '2rem',
+      huge: '2.4rem',
+      super: '2.8rem',
     }),
     radius: Sizes({
       bit: '0.5rem',

@@ -1,0 +1,78 @@
+/**
+ * Author: luisliu
+ * Description: the size class
+ * Time: 2022-04-02 15:44:21
+ * Contact: lc63msn@Hotmail.com
+ */
+
+ @import '../types.scss';
+
+@each $size in $sizes {
+  .radius-#{$size} {
+    border-radius: var(#{$prefix}-sizes-radius-#{$size})
+  }
+
+  .pad-#{$size} {
+    padding: var(#{$prefix}-sizes-padding-#{$size})
+  }
+
+  .pad-l-#{$size} {
+    padding-left: var(#{$prefix}-sizes-padLeft-#{$size})
+  }
+
+  .pad-r-#{$size} {
+    padding-right: var(#{$prefix}-sizes-padRight-#{$size})
+  }
+
+  .pad-t-#{$size} {
+    padding-top: var(#{$prefix}-sizes-padTop-#{$size});
+  }
+
+  .pad-b-#{$size} {
+    padding-bottom: var(#{$prefix}-sizes-padBottom-#{$size})
+  }
+
+  .pad-x-#{$size} {
+    padding-left: var(#{$prefix}-sizes-padX-#{$size});
+    padding-right: var(#{$prefix}-sizes-padX-#{$size});;
+  }
+
+  .pad-y-#{$size} {
+    padding-top: var(#{$prefix}-sizes-padY-#{$size});
+    padding-bottom: var(#{$prefix}-sizes-padY-#{$size})
+  }
+
+  .mar-#{$size} {
+    margin: var(#{$prefix}-sizes-margin-#{$size})
+  }
+
+  .mar-l-#{$size} {
+    margin-left: var(#{$prefix}-sizes-marLeft-#{$size})
+  }
+
+  .mar-r-#{$size} {
+    margin-right: var(#{$prefix}-sizes-marRight-#{$size})
+  }
+
+  .mar-t-#{$size} {
+    margin-top: var(#{$prefix}-sizes-marTop-#{$size})
+  }
+
+  .mar-b-#{$size} {
+    margin-bottom: var(#{$prefix}-sizes-marBottom-#{$size})
+  }
+
+  .mar-x-#{$size} {
+    margin-left: var(#{$prefix}-sizes-marX-#{$size});
+    margin-right: var(#{$prefix}-sizes-marX-#{$size})
+  }
+
+  .mar-y-#{$size} {
+    margin-top: var(#{$prefix}-sizes-marY-#{$size});
+    margin-bottom: var(#{$prefix}-sizes-marY-#{$size});
+  }
+
+  .text-s-#{$size} {
+    font-size: var(#{$prefix}-sizes-text-#{$size});
+  }
+}

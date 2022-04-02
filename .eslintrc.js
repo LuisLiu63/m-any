@@ -3,11 +3,7 @@ module.exports = {
   env: {
     node: true
   },
-  extends: [
-    'plugin:vue/vue3-essential',
-    '@vue/standard',
-    '@vue/typescript/recommended'
-  ],
+  extends: ["plugin:vue/vue3-essential", "@vue/standard", "@vue/typescript/recommended", "plugin:storybook/recommended"],
   parserOptions: {
     ecmaVersion: 2020
   },
@@ -16,17 +12,12 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'semi': 'off',
     'comma-dangle': 'off',
-    'space-before-function-paren': 'off',
+    'space-before-function-paren': 'off'
   },
-  overrides: [
-    {
-      files: [
-        '**/__tests__/*.{j,t}s?(x)',
-        '**/tests/unit/**/*.spec.{j,t}s?(x)'
-      ],
-      env: {
-        jest: true
-      }
+  overrides: [{
+    files: ['**/__tests__/*.{j,t}s?(x)', '**/tests/unit/**/*.spec.{j,t}s?(x)'],
+    env: {
+      jest: true
     }
-  ]
-}
+  }]
+};

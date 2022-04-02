@@ -4,7 +4,7 @@
 
 import { App } from 'vue';
 
-import UI from './ui';
+import UI from './ui-vue';
 import { SetTheme } from './theme';
 
 import { OptionsParam } from './types';

@@ -9,7 +9,7 @@ import {
   statusParams, statusValues,
   actionParams, actionValues,
   sizeParams, sizeValues,
-} from '../types'
+} from '../constants/type'
 
 export function Levels(levels?: levelParams):levelValues {
   return Object.assign({
@@ -25,10 +25,8 @@ export function Levels(levels?: levelParams):levelValues {
 
 export function Status(colors?: statusParams):statusValues {
   return Object.assign({
-    default: '#0f172a',
     light: 'rgb(255, 255, 255)',
     deep: 'rgb(51, 51, 51)',
-    normal: '', // 常规
     most: 'rgba(255, 0, 0, 1)', //   最重要
     more: 'rgba(255, 0, 0, 0.6)', //   重要
     main: 'rgba(0, 0, 0, 1)', //   主要
@@ -51,7 +49,6 @@ export function Actions(actions?: actionParams): actionValues {
 
 export function Sizes(sizes?: sizeParams): sizeValues {
   return Object.assign({
-    base: '1rem', //   基础
     bit: '0.05rem', //    很小/一点
     mini: '0.1rem', //   微小/微量
     small: '0.3rem', //  小/少

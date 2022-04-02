@@ -6,6 +6,7 @@ node_modules
 # storybook
 .storybook
 stories
+documents
 
 # zip file
 *.rar

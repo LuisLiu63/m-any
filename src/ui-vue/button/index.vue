@@ -1,13 +1,13 @@
 <template>
-  <button class="any-u--main" :type="button">
+  <button :class="styleClass" :type="button">
     <slot></slot>
   </button>
 </template>
 
 <script lang="ts">
 import './button.scss';
-import { reactive, PropType } from 'vue';
-import { nativeButtonTypes, nativeType, functionType, functionButtonTypes, buttonSizes, buttonSize } from '../../types';
+import { reactive, PropType, ref } from 'vue';
+import { nativeButtonTypes, nativeType, functionType, functionButtonTypes, buttonSizes, buttonSize } from '../type';
 
 const nativeButtons: nativeType[] = [
   nativeButtonTypes.Button
@@ -15,15 +15,20 @@ const nativeButtons: nativeType[] = [
 
 const styleButtons: functionType[] = [
   functionButtonTypes.Text,
-  functionButtonTypes.Main
+  functionButtonTypes.Main,
+  functionButtonTypes.Second,
+  functionButtonTypes.Sub
 ]
 
 const sizeButtons: buttonSize[] = [
   buttonSizes.Mini,
   buttonSizes.Small,
-  buttonSizes.Normal,
+  buttonSizes.Medium,
   buttonSizes.Large,
+  buttonSizes.Huge,
+  buttonSizes.Super,
   buttonSizes.Full,
+  buttonSizes.Fit,
 ]
 
 export default {
@@ -50,6 +55,7 @@ export default {
     },
     size: {
       type: String as PropType<buttonSize>,
+      default: 'small',
       validator: (value: buttonSize): boolean => sizeButtons.includes(value)
     },
   },
@@ -58,6 +64,14 @@ export default {
 
   setup(props, { emit }) {
     props = reactive(props);
+    const styleClass = ref([
+      `any-u--${props.type}`,
+      `pad-${props.size}`,
+      `text-s-${props.size}`,
+    ])
+    return {
+      styleClass
+    }
   },
 };
 </script>

@@ -4,19 +4,19 @@ export const UI_PREFIX = 'Any-';
 
 export const DefaultOptions: FullOptions = {
   theme: 'base',
-  size: 'normal',
+  size: 'medium',
   ui: {
     buttonType: 'main',
-    buttonSize: 'normal',
+    buttonSize: 'medium',
   }
 }
 
 export let ResultOptions: FullOptions = {
   theme: 'base',
-  size: 'normal',
+  size: 'medium',
   ui: {
     buttonType: 'main',
-    buttonSize: 'normal',
+    buttonSize: 'medium',
   }
 }
 

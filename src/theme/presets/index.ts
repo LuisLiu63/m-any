@@ -30,7 +30,7 @@ export default {
       default: '#0f172a',
       light: 'rgb(255, 255, 255)',
       deep: 'rgb(51, 51, 51)',
-      normal: '', // 常规
+      medium: '', // 常规
       most: '', //   最重要
       more: '', //   重要
       main: '', //   主要
@@ -52,7 +52,7 @@ export default {
       default: '#0f172a',
       light: 'rgb(255, 255, 255)',
       deep: 'rgb(51, 51, 51)',
-      normal: '', // 常规
+      medium: '', // 常规
       most: '', //   最重要
       more: '', //   重要
       main: '', //   主要

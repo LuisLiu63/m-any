@@ -1,4 +1,4 @@
-import { functionType as ButtonType, buttonSize } from './ui';
+import { functionType as ButtonType, buttonSize } from '../ui-vue/type';
 
 export type ThemeNames = 'base';
 
@@ -15,5 +15,3 @@ export interface OptionsParam {
   theme?: string,
   size?: string
 }
-
-export * from './ui'
