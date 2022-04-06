@@ -19,8 +19,6 @@ const PubSizing = Sizes({
 export default {
   backgrounds: {
     ...Status({
-      light: 'string',
-      deep: 'string',
       most: 'string',
       more: 'string',
       main: 'rgba(1, 0, 0, 1)',
@@ -39,8 +37,6 @@ export default {
       last: 'string',
     }),
     images: Status({
-      light: 'string',
-      deep: 'string',
       most: 'string',
       more: 'string',
       main: 'string',
@@ -49,8 +45,6 @@ export default {
       last: 'string',
     }),
     hover: Status({
-      light: 'string',
-      deep: 'string',
       most: 'string',
       more: 'string',
       main: 'rgba(255, 255, 255, 1)',
@@ -59,8 +53,6 @@ export default {
       last: 'string'
     }),
     focus: Status({
-      light: 'string',
-      deep: 'string',
       most: 'string',
       more: 'string',
       main: 'rgba(255, 255, 255, 1)',
@@ -69,8 +61,6 @@ export default {
       last: 'string',
     }),
     active: Status({
-      light: 'string',
-      deep: 'string',
       most: 'string',
       more: 'string',
       main: 'rgba(255, 255, 255, 1)',
@@ -81,8 +71,6 @@ export default {
   },
   colors: {
     ...Status({
-      light: 'string',
-      deep: 'string',
       most: 'string',
       more: 'string',
       main: 'rgba(255, 255, 255, 1)',
@@ -91,8 +79,6 @@ export default {
       last: 'string',
     }),
     hover: Status({
-      light: 'string',
-      deep: 'string',
       most: 'string',
       more: 'string',
       main: 'rgba(0, 0, 0, 1)',
@@ -101,8 +87,6 @@ export default {
       last: 'string',
     }),
     focus: Status({
-      light: 'string',
-      deep: 'string',
       most: 'string',
       more: 'string',
       main: 'string',
@@ -111,8 +95,6 @@ export default {
       last: 'string',
     }),
     active: Status({
-      light: 'string',
-      deep: 'string',
       most: 'string',
       more: 'string',
       main: 'rgba(0, 0, 0, 1)',
@@ -123,8 +105,6 @@ export default {
   },
   border: {
     ...Status({
-      light: 'string',
-      deep: 'string',
       most: 'string',
       more: 'string',
       main: 'string',
@@ -135,8 +115,6 @@ export default {
   },
   shadow: {
     ...Status({
-      light: 'string',
-      deep: 'string',
       most: 'string',
       more: 'string',
       main: 'string',

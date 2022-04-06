@@ -22,8 +22,6 @@ export type levelValues = {
 
 // 状态 - 参数
 export type statusParams = {
-  light?: string,
-  deep?: string,
   most?: string,
   more?: string,
   main?: string,
@@ -34,8 +32,6 @@ export type statusParams = {
 
 // 状态 - 值
 export type statusValues = {
-  light: string,
-  deep: string,
   most: string,
   more: string,
   main: string,

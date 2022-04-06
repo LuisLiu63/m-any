@@ -17,19 +17,19 @@
   // public hover background
   .back-hover-#{$state} {
     &:hover {
-      background-color: var(#{$prefix}-backgrounds-images-#{$state}, inherit);
+      background-color: var(#{$prefix}-backgrounds-hover-#{$state}, inherit);
     }
   }
   // public focus background
   .back-focus-#{$state} {
     &:focus {
-      background-color: var(#{$prefix}-backgrounds-images-#{$state}, inherit);
+      background-color: var(#{$prefix}-backgrounds-focus-#{$state}, inherit);
     }
   }
   // public active background
   .back-active-#{$state} {
     &:active {
-      background-color: var(#{$prefix}-backgrounds-images-#{$state}, inherit);
+      background-color: var(#{$prefix}-backgrounds-active-#{$state}, inherit);
     }
   }
 }

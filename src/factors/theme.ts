@@ -25,8 +25,6 @@ export function Levels(levels?: levelParams):levelValues {
 
 export function Status(colors?: statusParams):statusValues {
   return Object.assign({
-    light: 'rgb(255, 255, 255)',
-    deep: 'rgb(51, 51, 51)',
     most: 'rgba(255, 0, 0, 1)', //   最重要
     more: 'rgba(255, 0, 0, 0.6)', //   重要
     main: 'rgba(0, 0, 0, 1)', //   主要

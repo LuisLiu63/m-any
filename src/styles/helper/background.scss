@@ -1,11 +1,11 @@
 // background
-.bg-fixed {
+.back-fixed {
   background-attachment: fixed;
 }
-.bg-local {
+.back-local {
   background-attachment: local;
 }
-.bg-scroll {
+.back-scroll {
   background-attachment: scroll;
 }
 
@@ -22,60 +22,60 @@
   background-clip: text;
 }
 
-[class^=bg].bottom {
+[class^=back].bottom {
   background-position: bottom;
 }
-[class^=bg].center {
+[class^=back].center {
   background-position: center;
 }
-[class^=bg].left {
+[class^=back].left {
   background-position: left;
 }
-[class^=bg].left-bottom {
+[class^=back].left-bottom {
   background-position: left bottom;
 }
-[class^=bg].left-top {
+[class^=back].left-top {
   background-position: left top;
 }
-[class^=bg].right {
+[class^=back].right {
   background-position: right;
 }
-[class^=bg].right-bottom {
+[class^=back].right-bottom {
   background-position: right bottom;
 }
-[class^=bg].right-top {
+[class^=back].right-top {
   background-position: right top;
 }
-[class^=bg].top {
+[class^=back].top {
   background-position: top;
 }
 
-[class^=bg].repeat {
+[class^=back].repeat {
   background-repeat: repeat;
 }
-[class^=bg].no-repeat {
+[class^=back].no-repeat {
   background-repeat: no-repeat;
 }
-[class^=bg].repeat-x {
+[class^=back].repeat-x {
   background-repeat: repeat-x;
 }
-[class^=bg].repeat-y {
+[class^=back].repeat-y {
   background-repeat: repeat-y;
 }
-[class^=bg].repeat-round {
+[class^=back].repeat-round {
   background-repeat: round;
 }
-[class^=bg].repeat-space {
+[class^=back].repeat-space {
   background-repeat: space;
 }
 
-.bg-auto {
+.back-auto {
   background-size: auto;
 }
-.bg-cover {
+.back-cover {
   background-size: cover;
 }
-.bg-contain {
+.back-contain {
   background-size: contain;
 }
 

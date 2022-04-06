@@ -1,6 +1,6 @@
 <template>
   <button :class="styleClass" :type="button">
-    <slot></slot>
+    <slot>{{ label }}</slot>
   </button>
 </template>
 
@@ -58,6 +58,9 @@ export default {
       default: 'small',
       validator: (value: buttonSize): boolean => sizeButtons.includes(value)
     },
+    label: {
+      type: String
+    }
   },
 
   emits: ['click'],
